@@ -1,0 +1,101 @@
+/* General setup */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typology */
+
+/* Layout */
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0B2434;
+  font-family: 'Karla';
+}
+
+/* Main */
+main {
+  width: 640px;
+  height: 640px;
+
+  padding: 2em;
+
+  background: #F5F5F5;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Instructions */
+.title {
+  font-size: 5rem;
+}
+
+.instructions {
+  width: 60%;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Dice */
+.diceContainer {  
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+  gap: 2em;
+
+  margin: auto 0;
+}
+
+.die {
+  width: 80px;
+  height: 80px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Button */
+button {
+  width: 200px;
+  height: 80px;
+
+  background: #5035FF;
+  box-shadow: 0px 3.5px 7.5px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  border: none;
+  
+  color: white;
+  font-family: 'Karla';
+  font-size: 2.5rem;
+  letter-spacing: -.5px;
+
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(95%);
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.4);
+}
